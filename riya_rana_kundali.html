@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>রিয়া রানা — জন্ম কুণ্ডলী</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;600;700&family=Cinzel+Decorative:wght@400;700&family=Noto+Sans+Bengali:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold: #C9A84C;
+  --saffron: #FF9933;
+  --cream: #FDF6E3;
+  --parchment: #F0DDB0;
+  --dark-bg: #0F0500;
+  --card-bg: rgba(28,10,0,0.94);
+  --card-border: rgba(201,168,76,0.3);
+  --text-body: #E8D4A0;
+  --r: 12px;
+  --rs: 8px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--dark-bg);
+  background-image:
+    radial-gradient(ellipse 140% 55% at 50% 0%,#3a1400 0%,transparent 65%),
+    radial-gradient(ellipse 70% 35% at 85% 100%,#1c0800 0%,transparent 55%);
+  font-family:'Noto Serif Bengali',serif;
+  color:var(--cream);
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+  font-size:16px;
+}
+
+/* NAV */
+.nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(10,4,0,0.93);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(201,168,76,0.18);
+  padding:7px 12px;
+  display:flex;gap:5px;flex-wrap:wrap;justify-content:center;
+  overflow-x:auto;
+}
+.nav a{
+  font-family:'Noto Sans Bengali',sans-serif;
+  font-size:clamp(0.6rem,2vw,0.72rem);
+  color:rgba(201,168,76,0.75);
+  padding:4px 10px;
+  border-radius:20px;
+  border:1px solid rgba(201,168,76,0.2);
+  text-decoration:none;
+  white-space:nowrap;
+  transition:background .2s,color .2s;
+}
+.nav a:hover{background:rgba(201,168,76,0.12);color:var(--gold);}
+
+/* PAGE */
+.page{max-width:840px;margin:0 auto;padding:clamp(10px,3.5vw,26px);}
+
+/* HEADER */
+.hdr{text-align:center;padding:clamp(26px,7vw,52px) 12px clamp(18px,5vw,32px);margin-bottom:clamp(16px,4vw,28px);}
+.hdr-om{font-size:clamp(2rem,9vw,3.4rem);display:block;margin-bottom:10px;
+  animation:floatPulse 4s ease-in-out infinite;filter:drop-shadow(0 0 16px rgba(201,168,76,.55));}
+@keyframes floatPulse{0%,100%{transform:translateY(0) scale(1);}50%{transform:translateY(-7px) scale(1.08);opacity:.85;}}
+.hdr-badge{
+  display:inline-block;border:1px solid rgba(201,168,76,.45);border-radius:50px;
+  padding:3px 16px;font-family:'Cinzel Decorative',serif;
+  font-size:clamp(.52rem,2vw,.78rem);color:var(--gold);letter-spacing:3px;
+  background:rgba(201,168,76,.06);margin-bottom:11px;
+}
+.hdr h1{font-size:clamp(1.5rem,7vw,2.8rem);font-weight:700;color:var(--saffron);
+  text-shadow:0 0 28px rgba(255,153,51,.4);line-height:1.2;margin-bottom:5px;}
+.hdr-sub{font-family:'Noto Sans Bengali',sans-serif;font-size:clamp(.75rem,2.2vw,.9rem);
+  color:var(--parchment);opacity:.7;margin-bottom:14px;}
+.ornline{display:flex;align-items:center;gap:10px;justify-content:center;margin:8px 0;}
+.ornline::before,.ornline::after{content:'';flex:1;max-width:110px;height:1px;
+  background:linear-gradient(to right,transparent,var(--gold),transparent);}
+.ornline span{color:var(--gold);font-size:1rem;letter-spacing:7px;}
+
+/* SECTION TITLE */
+.stitle{
+  display:flex;align-items:center;gap:9px;
+  margin:clamp(18px,5vw,32px) 0 clamp(10px,3vw,18px);
+  font-family:'Cinzel Decorative',serif;font-size:clamp(.65rem,2.3vw,.9rem);
+  color:var(--gold);letter-spacing:2px;
+}
+.stitle::before,.stitle::after{content:'';flex:1;height:1px;min-width:12px;
+  background:linear-gradient(to right,transparent,var(--gold),transparent);}
+
+/* INFO CARD */
+.info-card{
+  background:linear-gradient(145deg,rgba(90,25,0,.22) 0%,var(--card-bg) 100%);
+  border:1px solid var(--gold);border-radius:var(--r);
+  padding:clamp(14px,4vw,26px);margin-bottom:clamp(14px,4vw,26px);
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(min(150px,100%),1fr));
+  gap:clamp(8px,2vw,14px);
+  box-shadow:0 0 36px rgba(201,168,76,.1),0 8px 28px rgba(0,0,0,.45);
+}
+.ii{display:flex;flex-direction:column;gap:3px;padding:clamp(8px,2vw,12px);
+  background:rgba(0,0,0,.22);border-radius:var(--rs);border:1px solid rgba(201,168,76,.1);
+  transition:border-color .2s;}
+.ii:hover{border-color:rgba(201,168,76,.3);}
+.il{font-size:clamp(.6rem,1.7vw,.7rem);color:var(--gold);font-family:'Noto Sans Bengali',sans-serif;
+  letter-spacing:.7px;opacity:.88;text-transform:uppercase;}
+.iv{font-size:clamp(.82rem,2.3vw,.97rem);color:var(--cream);font-weight:600;line-height:1.35;}
+
+/* CHART */
+.chart-wrap{width:100%;max-width:470px;margin:0 auto clamp(18px,5vw,32px);aspect-ratio:1;}
+.chart-wrap svg{width:100%;height:auto;display:block;filter:drop-shadow(0 0 22px rgba(201,168,76,.25));}
+
+/* REPORT CARD */
+.rc{
+  background:var(--card-bg);border:1px solid var(--card-border);
+  border-left:4px solid var(--gold);border-radius:0 var(--r) var(--r) 0;
+  padding:clamp(14px,4vw,26px);margin-bottom:clamp(12px,3vw,20px);
+  position:relative;overflow:hidden;box-shadow:0 4px 22px rgba(0,0,0,.38);
+  transition:box-shadow .25s;
+}
+.rc:hover{box-shadow:0 6px 30px rgba(201,168,76,.09),0 4px 22px rgba(0,0,0,.45);}
+.rc::after{content:'';position:absolute;top:-35px;right:-35px;width:110px;height:110px;
+  background:radial-gradient(circle,rgba(201,168,76,.05) 0%,transparent 70%);pointer-events:none;}
+.rc h3{color:var(--saffron);font-size:clamp(.95rem,2.8vw,1.15rem);
+  margin-bottom:clamp(10px,2.5vw,16px);display:flex;align-items:center;gap:8px;
+  flex-wrap:wrap;line-height:1.4;}
+.rc h3 .icon{font-size:1.25em;flex-shrink:0;}
+.rc p{font-family:'Noto Sans Bengali',sans-serif;line-height:1.88;
+  color:var(--text-body);font-size:clamp(.82rem,2.3vw,.93rem);margin-bottom:10px;}
+
+/* HIGHLIGHT BOX */
+.hbox{background:rgba(201,168,76,.07);border:1px solid rgba(201,168,76,.2);
+  border-radius:var(--rs);padding:clamp(9px,2.5vw,13px);margin:9px 0;}
+.hbox p{margin-bottom:0;font-size:clamp(.8rem,2.2vw,.91rem);}
+
+/* PLANET GRID */
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(155px,100%),1fr));
+  gap:clamp(7px,2vw,12px);margin:12px 0;}
+.pc{background:rgba(0,0,0,.32);border:1px solid rgba(201,168,76,.18);border-radius:var(--rs);
+  padding:clamp(9px,2.5vw,13px);text-align:center;transition:transform .2s,border-color .2s;}
+.pc:hover{transform:translateY(-2px);border-color:rgba(201,168,76,.45);}
+.pn{font-size:clamp(1.4rem,4.5vw,1.7rem);margin-bottom:4px;}
+.pt{color:var(--gold);font-size:clamp(.68rem,1.9vw,.8rem);font-weight:600;
+  margin-bottom:4px;font-family:'Noto Sans Bengali',sans-serif;line-height:1.4;}
+.pd{color:var(--parchment);font-size:clamp(.68rem,1.9vw,.78rem);opacity:.85;
+  font-family:'Noto Sans Bengali',sans-serif;line-height:1.6;}
+
+/* HOUSE GRID */
+.hgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(225px,100%),1fr));
+  gap:clamp(7px,2vw,11px);margin:12px 0;}
+.hi{background:rgba(0,0,0,.26);border:1px solid rgba(201,168,76,.15);
+  border-radius:var(--rs);padding:clamp(9px,2.5vw,13px);}
+.hn{color:var(--gold);font-weight:700;font-size:clamp(.68rem,1.9vw,.8rem);
+  margin-bottom:5px;font-family:'Noto Sans Bengali',sans-serif;line-height:1.4;}
+.hd{color:var(--parchment);font-size:clamp(.74rem,2vw,.84rem);
+  line-height:1.72;font-family:'Noto Sans Bengali',sans-serif;}
+
+/* LUCKY GRID */
+.lgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(6px,1.8vw,11px);margin:13px 0;}
+@media(max-width:340px){.lgrid{grid-template-columns:repeat(2,1fr);}}
+.li{background:rgba(201,168,76,.07);border:1px solid rgba(201,168,76,.22);
+  border-radius:var(--rs);padding:clamp(7px,2.5vw,13px);text-align:center;}
+.ll{display:block;font-size:clamp(.58rem,1.7vw,.7rem);color:var(--gold);
+  font-family:'Noto Sans Bengali',sans-serif;margin-bottom:4px;opacity:.88;}
+.lv{font-size:clamp(.74rem,2.2vw,.9rem);font-weight:700;color:var(--cream);line-height:1.35;}
+
+/* YEAR BLOCK */
+.yb{border-left:3px solid var(--saffron);padding-left:clamp(9px,3vw,16px);margin:12px 0;}
+.yt{color:var(--saffron);font-size:clamp(.8rem,2.4vw,.97rem);font-weight:700;
+  margin-bottom:7px;line-height:1.4;}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px;}
+.tag{display:inline-block;background:rgba(255,153,51,.1);border:1px solid rgba(255,153,51,.3);
+  color:var(--saffron);font-size:clamp(.62rem,1.7vw,.73rem);padding:3px 9px;
+  border-radius:20px;font-family:'Noto Sans Bengali',sans-serif;}
+.stars{color:var(--gold);letter-spacing:2px;}
+
+/* AURA STRIP */
+.astrip{display:flex;border-radius:var(--rs);overflow:hidden;margin:13px 0;height:9px;}
+.ar{flex:3;background:linear-gradient(to right,#7a0000,#CC2200);}
+.ag{flex:3;background:linear-gradient(to right,#BB7700,#C9A84C);}
+.ab{flex:2;background:linear-gradient(to right,#1B2A4A,#2C4A7A);}
+
+/* DIVIDER / FOOTER */
+.divider{text-align:center;color:var(--gold);opacity:.4;
+  font-size:clamp(.85rem,2.8vw,1rem);letter-spacing:6px;margin:clamp(14px,5vw,26px) 0;}
+footer{text-align:center;padding:clamp(18px,5vw,32px) clamp(10px,4vw,22px);
+  color:rgba(201,168,76,.42);font-size:clamp(.68rem,1.9vw,.8rem);
+  font-family:'Noto Sans Bengali',sans-serif;
+  border-top:1px solid rgba(201,168,76,.16);line-height:1.9;}
+
+@media(max-width:460px){
+  .rc{border-radius:0 var(--rs) var(--rs) 0;}
+  .ornline::before,.ornline::after{max-width:55px;}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="#info">তথ্য</a>
+  <a href="#chart">কুণ্ডলী</a>
+  <a href="#grahas">গ্রহ</a>
+  <a href="#bhavas">ভাব</a>
+  <a href="#yogas">যোগ</a>
+  <a href="#aura">আউরা</a>
+  <a href="#lucky">শুভ</a>
+  <a href="#pred">ভবিষ্যৎ</a>
+  <a href="#rem">প্রতিকার</a>
+</nav>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="hdr">
+    <span class="hdr-om">🕉️</span>
+    <div class="hdr-badge">JANAM KUNDALI · বৈদিক জ্যোতিষ</div>
+    <h1>রিয়া রানা</h1>
+    <p class="hdr-sub">সম্পূর্ণ জন্ম কুণ্ডলী বিশ্লেষণ — লাহিড়ী অয়নাংশ পদ্ধতি</p>
+    <div class="ornline"><span>✦ ॐ ✦</span></div>
+  </header>
+
+  <!-- INFO -->
+  <div id="info">
+    <div class="stitle">ব্যক্তিগত তথ্য</div>
+    <div class="info-card">
+      <div class="ii"><span class="il">পূর্ণ নাম</span><span class="iv">রিয়া রানা</span></div>
+      <div class="ii"><span class="il">জন্ম তারিখ</span><span class="iv">২৯ অক্টোবর, ২০০৬</span></div>
+      <div class="ii"><span class="il">জন্ম সময়</span><span class="iv">দুপুর ১২:৩০</span></div>
+      <div class="ii"><span class="il">জন্মস্থান</span><span class="iv">তমলুক হাসপাতাল, পশ্চিমবঙ্গ</span></div>
+      <div class="ii"><span class="il">লগ্ন</span><span class="iv">মকর ♑</span></div>
+      <div class="ii"><span class="il">চন্দ্র রাশি</span><span class="iv">বৃশ্চিক ♏</span></div>
+      <div class="ii"><span class="il">সূর্য রাশি</span><span class="iv">তুলা ♎</span></div>
+      <div class="ii"><span class="il">নক্ষত্র</span><span class="iv">জ্যেষ্ঠা — ৩য় পাদ</span></div>
+      <div class="ii"><span class="il">বর্তমান মহাদশা</span><span class="iv">বুধ (—২০৩২)</span></div>
+      <div class="ii"><span class="il">অক্ষাংশ / দ্রাঘিমা</span><span class="iv">22.3°N · 87.9°E</span></div>
+    </div>
+  </div>
+
+  <!-- CHART -->
+  <div id="chart">
+    <div class="stitle">জন্ম কুণ্ডলী চক্র</div>
+    <div class="chart-wrap">
+      <svg viewBox="0 0 440 440" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#180800"/>
+            <stop offset="100%" stop-color="#2a1000"/>
+          </linearGradient>
+          <filter id="gw"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <rect width="440" height="440" fill="url(#bg)" rx="6"/>
+        <rect x="3" y="3" width="434" height="434" fill="none" stroke="#C9A84C" stroke-width="2" rx="5" opacity=".7"/>
+        <rect x="13" y="13" width="414" height="414" fill="none" stroke="#C9A84C" stroke-width="1.2" opacity=".45"/>
+        <polygon points="220,33 407,220 220,407 33,220" fill="none" stroke="#C9A84C" stroke-width="1.5" opacity=".6"/>
+        <line x1="13" y1="13" x2="427" y2="427" stroke="#C9A84C" stroke-width=".8" opacity=".3"/>
+        <line x1="427" y1="13" x2="13" y2="427" stroke="#C9A84C" stroke-width=".8" opacity=".3"/>
+        <line x1="220" y1="13" x2="220" y2="427" stroke="#C9A84C" stroke-width=".8" opacity=".3"/>
+        <line x1="13" y1="220" x2="427" y2="220" stroke="#C9A84C" stroke-width=".8" opacity=".3"/>
+        <!-- center -->
+        <circle cx="220" cy="220" r="40" fill="rgba(0,0,0,.45)" stroke="#C9A84C" stroke-width="1" opacity=".45"/>
+        <text x="220" y="214" text-anchor="middle" fill="#C9A84C" font-size="22" font-family="serif" filter="url(#gw)">ॐ</text>
+        <text x="220" y="233" text-anchor="middle" fill="#C9A84C" font-size="9" font-family="Noto Serif Bengali,serif">রিয়া</text>
+        <!-- 1st LAGNA top -->
+        <text x="220" y="60"  text-anchor="middle" fill="#FFD700" font-size="11.5" font-weight="bold" font-family="Noto Serif Bengali,serif" filter="url(#gw)">মকর ♑</text>
+        <text x="220" y="76"  text-anchor="middle" fill="#C9A84C" font-size="9" font-family="Noto Serif Bengali,serif">লগ্ন · ১ম ভাব</text>
+        <text x="220" y="91"  text-anchor="middle" fill="#FDF6E3" font-size="9" font-family="Noto Serif Bengali,serif">শনি ♄</text>
+        <!-- 12th top-left -->
+        <text x="93"  y="87"  text-anchor="middle" fill="#FF9933" font-size="11" font-weight="600" font-family="Noto Serif Bengali,serif">ধনু ♐</text>
+        <text x="93"  y="103" text-anchor="middle" fill="#C9A84C" font-size="9" font-family="Noto Serif Bengali,serif">১২শ ভাব</text>
+        <text x="93"  y="117" text-anchor="middle" fill="#FDF6E3" font-size="8.5" font-family="Noto Serif Bengali,serif">বৃহস্পতি♃ কেতু☋</text>
+        <!-- 2nd top-right -->
+        <text x="347" y="87"  text-anchor="middle" fill="#FF9933" font-size="11" font-weight="600" font-family="Noto Serif Bengali,serif">কুম্ভ ♒</text>
+        <text x="347" y="103" text-anchor="middle" fill="#C9A84C" font-size="9" font-family="Noto Serif Bengali,serif">২য় ভাব</text>
+        <!-- 11th left -->
+        <text x="58"  y="196" text-anchor="middle" fill="#FF9933" font-size="11" font-weight="600" font-family="Noto Serif Bengali,serif">বৃশ্চিক♏</text>
+        <text x="58"  y="212" text-anchor="middle" fill="#C9A84C" font-size="9" font-family="Noto Serif Bengali,serif">১১শ ভাব</text>
+        <text x="58"  y="226" text-anchor="middle" fill="#FDF6E3" font-size="8.5" font-family="Noto Serif Bengali,serif">চন্দ্র🌙 মঙ্গল♂</text>
+        <!-- 3rd right -->
+        <text x="382" y="196" text-anchor="middle" fill="#FF9933" font-size="11" font-weight="600" font-family="Noto Serif Bengali,serif">মীন ♓</text>
+        <text x="382" y="212" text-anchor="middle" fill="#C9A84C" font-size="9" font-family="Noto Serif Bengali,serif">৩য় ভাব</text>
+        <!-- 10th bottom-left -->
+        <text x="93"  y="330" text-anchor="middle" fill="#FF9933" font-size="11" font-weight="600" font-family="Noto Serif Bengali,serif">তুলা ♎</text>
+        <text x="93"  y="346" text-anchor="middle" fill="#C9A84C" font-size="9" font-family="Noto Serif Bengali,serif">১০ম ভাব</text>
+        <text x="93"  y="360" text-anchor="middle" fill="#FDF6E3" font-size="8.5" font-family="Noto Serif Bengali,serif">সূর্য☀ শুক্র♀</text>
+        <!-- 4th bottom-right -->
+        <text x="347" y="330" text-anchor="middle" fill="#FF9933" font-size="11" font-weight="600" font-family="Noto Serif Bengali,serif">মেষ ♈</text>
+        <text x="347" y="346" text-anchor="middle" fill="#C9A84C" font-size="9" font-family="Noto Serif Bengali,serif">৪র্থ ভাব</text>
+        <!-- 9th bl corner -->
+        <text x="93"  y="385" text-anchor="middle" fill="#FF9933" font-size="10.5" font-weight="600" font-family="Noto Serif Bengali,serif">কন্যা ♍</text>
+        <text x="93"  y="399" text-anchor="middle" fill="#C9A84C" font-size="8.5" font-family="Noto Serif Bengali,serif">৯ম · বুধ☿(উচ্চ)</text>
+        <!-- 7th bottom center -->
+        <text x="220" y="366" text-anchor="middle" fill="#FF9933" font-size="11" font-weight="600" font-family="Noto Serif Bengali,serif">কর্কট ♋</text>
+        <text x="220" y="382" text-anchor="middle" fill="#C9A84C" font-size="9" font-family="Noto Serif Bengali,serif">৭ম ভাব</text>
+        <text x="220" y="397" text-anchor="middle" fill="#FDF6E3" font-size="9" font-family="Noto Serif Bengali,serif">রাহু ☊</text>
+        <!-- 5th br corner -->
+        <text x="347" y="385" text-anchor="middle" fill="#FF9933" font-size="10.5" font-weight="600" font-family="Noto Serif Bengali,serif">বৃষ ♉</text>
+        <text x="347" y="399" text-anchor="middle" fill="#C9A84C" font-size="8.5" font-family="Noto Serif Bengali,serif">৫ম ভাব</text>
+        <!-- 6/8 side labels -->
+        <text x="382" y="330" text-anchor="middle" fill="#FF9933" font-size="10" font-weight="600" font-family="Noto Serif Bengali,serif">সিংহ♌</text>
+        <text x="382" y="344" text-anchor="middle" fill="#C9A84C" font-size="8.5" font-family="Noto Serif Bengali,serif">৮ম ভাব</text>
+        <text x="382" y="270" text-anchor="middle" fill="#FF9933" font-size="10" font-weight="600" font-family="Noto Serif Bengali,serif">মিথুন♊</text>
+        <text x="382" y="284" text-anchor="middle" fill="#C9A84C" font-size="8.5" font-family="Noto Serif Bengali,serif">৬ষ্ঠ ভাব</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- GRAHAS -->
+  <div id="grahas">
+    <div class="stitle">গ্রহ স্থিতি বিবরণ</div>
+    <div class="rc">
+      <h3><span class="icon">🪐</span> নবগ্রহ বিশ্লেষণ</h3>
+      <div class="pgrid">
+        <div class="pc"><div class="pn">☀️</div><div class="pt">সূর্য — তুলা, ১০ম ভাব</div><div class="pd">কর্মভাবে — নেতৃত্বগুণ, উচ্চ ক্যারিয়ার, প্রশাসনিক সাফল্য।</div></div>
+        <div class="pc"><div class="pn">🌙</div><div class="pt">চন্দ্র — বৃশ্চিক, ১১শ ভাব</div><div class="pd">নীচ চন্দ্র → নেচভঙ্গ রাজযোগ। মানসিক গভীরতা, বৃহৎ বন্ধুচক্র।</div></div>
+        <div class="pc"><div class="pn">♂️</div><div class="pt">মঙ্গল — বৃশ্চিক, ১১শ ভাব</div><div class="pd">স্বগৃহে — অতি শুভ। সাহস, শক্তি ও আর্থিক সমৃদ্ধি।</div></div>
+        <div class="pc"><div class="pn">☿</div><div class="pt">বুধ — কন্যা, ৯ম (উচ্চ)</div><div class="pd">উচ্চের বুধ — বিদ্যা ও বুদ্ধিমত্তায় অসাধারণ। ভাগ্য শুভ।</div></div>
+        <div class="pc"><div class="pn">♃</div><div class="pt">বৃহস্পতি — ধনু, ১২শ</div><div class="pd">স্বগৃহে — আধ্যাত্মিকতা, বিদেশ সুযোগ, দূরদর্শিতা।</div></div>
+        <div class="pc"><div class="pn">♀️</div><div class="pt">শুক্র — তুলা, ১০ম ভাব</div><div class="pd">স্বগৃহে — লক্ষ্মী যোগ। শিল্প, সৌন্দর্য, সুখী বিবাহ।</div></div>
+        <div class="pc"><div class="pn">♄</div><div class="pt">শনি — মকর, ১ম ভাব</div><div class="pd">স্বগৃহে — শশ মহাপুরুষ যোগ। স্থায়ী মর্যাদা ও সাফল্য।</div></div>
+        <div class="pc"><div class="pn">☊</div><div class="pt">রাহু — কর্কট, ৭ম ভাব</div><div class="pd">সম্পর্কে সতর্কতা। বিদেশি সংযোগ বা অসাধারণ সঙ্গী।</div></div>
+        <div class="pc"><div class="pn">☋</div><div class="pt">কেতু — ধনু, ১২শ ভাব</div><div class="pd">পূর্বজন্মের পুণ্য। আধ্যাত্মিক উন্নতি ও সূক্ষ্ম জ্ঞান।</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LAGNA -->
+  <div class="rc">
+    <h3><span class="icon">⬆️</span> লগ্ন বিশ্লেষণ — মকর লগ্ন</h3>
+    <p>রিয়ার জন্ম মকর লগ্নে — অধিপতি শনি। মকর লগ্নের জাতিকারা গম্ভীর, পরিশ্রমী, সংকল্পবদ্ধ এবং লক্ষ্যে অটল হয়ে থাকেন।</p>
+    <div class="hbox"><p>✦ মকর লগ্নে শনি স্বগৃহে — <strong style="color:var(--gold);">শশ মহাপুরুষ যোগ</strong> গঠিত। জীবনে অনেক বাধা অতিক্রম করার ক্ষমতা। দেরিতে কিন্তু স্থায়ী ও গৌরবময় সাফল্য।</p></div>
+    <p>হাড় ও হাঁটুর স্বাস্থ্যে মনোযোগ রাখা উচিত। সমাজে সম্মান, দায়িত্বশীলতা ও কর্তব্যবোধ তার চরিত্রের মূল ভিত্তি।</p>
+  </div>
+
+  <!-- BHAVAS -->
+  <div id="bhavas">
+    <div class="stitle">দ্বাদশ ভাব বিশ্লেষণ</div>
+    <div class="rc">
+      <h3><span class="icon">🏠</span> ১২ ভাব — সম্পূর্ণ বিশ্লেষণ</h3>
+      <div class="hgrid">
+        <div class="hi"><div class="hn">১ম — তনু ভাব (মকর · শনি)</div><div class="hd">দেহ ও ব্যক্তিত্ব। গম্ভীর চেহারা, মধ্যম বা দীর্ঘ গড়ন। হাড় ও হাঁটুতে মনোযোগ।</div></div>
+        <div class="hi"><div class="hn">২য় — ধন ভাব (কুম্ভ)</div><div class="hd">পারিবারিক বন্ধন দৃঢ়। বাকপটুতা ও মিষ্টভাষী। অর্থ আসবে — অপচয় এড়ানো উচিত।</div></div>
+        <div class="hi"><div class="hn">৩য় — পরাক্রম ভাব (মীন)</div><div class="hd">লেখালেখি ও শিল্পকলায় সহজাত প্রতিভা। ভাই-বোনের সাথে সম্পর্ক সুখের।</div></div>
+        <div class="hi"><div class="hn">৪র্থ — সুখ ভাব (মেষ)</div><div class="hd">মা-র সাথে সম্পর্ক নিবিড়। নিজের বাড়ি বা যানবাহন লাভের সম্ভাবনা।</div></div>
+        <div class="hi"><div class="hn">৫ম — পুত্র ভাব (বৃষ)</div><div class="hd">সৃজনশীলতা ও শিল্পে আগ্রহ। পড়াশোনায় অত্যন্ত মেধাবী। পূর্বপুণ্য সক্রিয়।</div></div>
+        <div class="hi"><div class="hn">৬ষ্ঠ — শত্রু ভাব (মিথুন)</div><div class="hd">বুধাধিপত্যে শত্রু পরাজিত হবে। স্বাস্থ্য ভালো — পেটের সমস্যায় সতর্কতা।</div></div>
+        <div class="hi"><div class="hn">৭ম — দাম্পত্য ভাব (কর্কট · রাহু)</div><div class="hd">বিবাহে কিছু বিলম্ব। সঙ্গী বুদ্ধিমান ও উচ্চাকাঙ্ক্ষী হবেন।</div></div>
+        <div class="hi"><div class="hn">৮ম — আয়ু ভাব (সিংহ)</div><div class="hd">দীর্ঘায়ু সম্ভাবনা উজ্জ্বল। উত্তরাধিকার সম্পদ লাভের যোগ। গবেষণায় আগ্রহ।</div></div>
+        <div class="hi"><div class="hn">৯ম — ভাগ্য ভাব (কন্যা · বুধ উচ্চ)</div><div class="hd">ভাগ্য অত্যন্ত শুভ। বিদেশে পড়াশোনা বা উচ্চতর ডিগ্রির সম্ভাবনা প্রবল।</div></div>
+        <div class="hi"><div class="hn">১০ম — কর্ম ভাব (তুলা · সূর্য, শুক্র)</div><div class="hd">অসাধারণ কর্মজীবন। মিডিয়া, শিল্প বা সরকারি পদে উজ্জ্বল ভবিষ্যৎ।</div></div>
+        <div class="hi"><div class="hn">১১শ — লাভ ভাব (বৃশ্চিক · চন্দ্র, মঙ্গল)</div><div class="hd">মঙ্গল স্বগৃহে — আর্থিক লাভ নিশ্চিত। প্রভাবশালী বন্ধুচক্র।</div></div>
+        <div class="hi"><div class="hn">১২শ — ব্যয় ভাব (ধনু · বৃহস্পতি, কেতু)</div><div class="hd">বিদেশ যাত্রার যোগ প্রবল। আধ্যাত্মিক উন্নতি ও রহস্যময় জ্ঞানে আগ্রহ।</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PERSONALITY -->
+  <div class="rc">
+    <h3><span class="icon">🌸</span> স্বভাব ও ব্যক্তিত্ব</h3>
+    <div class="hbox"><p><strong style="color:var(--gold);">মানসিক গুণ:</strong> জ্যেষ্ঠা নক্ষত্রে জন্ম — তীক্ষ্ণ বুদ্ধিমত্তা ও শাসন-ক্ষমতার সহজাত গুণ। কঠিন পরিস্থিতিতেও ঠান্ডা মাথায় সিদ্ধান্ত নিতে পারে।</p></div>
+    <div class="hbox"><p><strong style="color:var(--gold);">সামাজিক গুণ:</strong> ১১শ ভাবে মঙ্গল ও চন্দ্রের কারণে বিশাল ও বৈচিত্র্যময় বন্ধুচক্র। সহজেই মানুষের হৃদয় জয় করে।</p></div>
+    <div class="hbox"><p><strong style="color:var(--gold);">দুর্বলতা:</strong> বৃশ্চিক চন্দ্রের কারণে মাঝে মাঝে অতিরিক্ত আবেগপ্রবণ। রাহুর ৭ম ভাবের প্রভাবে সম্পর্কে সহজে বিশ্বাস না করাই ভালো।</p></div>
+    <p>সামগ্রিকভাবে রিয়া দৃঢ়মনা, পরিশ্রমী, বুদ্ধিমান ও সৌন্দর্যপ্রিয় — নেতৃত্বের অসাধারণ গুণ সময়ের সাথে প্রকাশ পাবে।</p>
+  </div>
+
+  <!-- YOGAS -->
+  <div id="yogas">
+    <div class="stitle">মহাদশা ও বিশেষ যোগ</div>
+    <div class="rc">
+      <h3><span class="icon">⚡</span> রাজযোগ ও মহাদশা</h3>
+      <p><strong style="color:var(--gold);">বর্তমান মহাদশা: বুধ (২০১৫ — ২০৩২)</strong></p>
+      <p>বুধ ৯ম ভাবে উচ্চস্থ — এই দশা বিদ্যা, যোগাযোগ, ব্যবসা ও ভ্রমণে বিশেষ অগ্রগতি দেবে।</p>
+      <div class="hbox"><p>✦ <strong>নেচভঙ্গ রাজযোগ</strong> — নীচ চন্দ্র মঙ্গলের উপস্থিতিতে ভঞ্জন। বাধা কাটিয়ে বিজয়ের সূচক।</p></div>
+      <div class="hbox"><p>✦ <strong>লক্ষ্মী যোগ</strong> — শুক্র নিজের রাশিতে ও ১০ম ভাবে। সম্পদ ও ঐশ্বর্য লাভের যোগ।</p></div>
+      <div class="hbox"><p>✦ <strong>শশ মহাপুরুষ যোগ</strong> — শনি মকর লগ্নে। পঞ্চ মহাপুরুষ যোগের অন্যতম — অসাধারণ মর্যাদা ও সাফল্য।</p></div>
+      <div class="hbox"><p>✦ <strong>ভদ্র মহাপুরুষ যোগ</strong> — বুধ কন্যায় উচ্চে। বুদ্ধিমত্তা, বাগ্মিতা ও ব্যবসায়িক দক্ষতা।</p></div>
+    </div>
+  </div>
+
+  <!-- AURA -->
+  <div id="aura">
+    <div class="stitle">ভারতীয় আউরা বিশ্লেষণ</div>
+    <div class="rc">
+      <h3><span class="icon">✨</span> দৈবিক আভা (Aura Reading)</h3>
+      <p>রিয়ার আউরা <strong style="color:var(--saffron);">গাঢ় লাল, সোনালি ও নীল</strong> রঙের মিশ্রণে — মঙ্গল, শুক্র ও শনির সম্মিলিত প্রভাব।</p>
+      <div class="astrip"><div class="ar"></div><div class="ag"></div><div class="ab"></div></div>
+      <div class="hbox"><p>🔴 <strong>লাল আউরা (মঙ্গল):</strong> সাহস, দৃঢ়তা, আত্মবিশ্বাস ও নেতৃত্বের শক্তি।</p></div>
+      <div class="hbox"><p>🟡 <strong>সোনালি আউরা (শুক্র · সূর্য):</strong> সৌন্দর্যপ্রীতি, সৃজনশীলতা ও প্রেমের প্রতীক।</p></div>
+      <div class="hbox"><p>🔵 <strong>গাঢ় নীল আউরা (শনি):</strong> গভীর চিন্তাশক্তি, দায়িত্ববোধ ও আধ্যাত্মিক গভীরতা।</p></div>
+      <p>এই আউরার অধিকারীরা পারিপার্শ্বিক মানুষদের উপর বিশেষ প্রভাব বিস্তার করতে পারেন।</p>
+    </div>
+  </div>
+
+  <!-- LUCKY -->
+  <div id="lucky">
+    <div class="stitle">শুভ রং, রত্ন ও মন্ত্র</div>
+    <div class="rc">
+      <h3><span class="icon">🍀</span> শুভ উপাদান সমূহ</h3>
+      <div class="lgrid">
+        <div class="li"><span class="ll">শুভ রং</span><div class="lv">নীল, সবুজ, সাদা</div></div>
+        <div class="li"><span class="ll">শুভ সংখ্যা</span><div class="lv">৬, ৮, ৫</div></div>
+        <div class="li"><span class="ll">শুভ দিন</span><div class="lv">শুক্র, শনি, বুধ</div></div>
+        <div class="li"><span class="ll">মূল রত্ন</span><div class="lv">পান্না 💚</div></div>
+        <div class="li"><span class="ll">উপরত্ন</span><div class="lv">হীরা / পোখরাজ</div></div>
+        <div class="li"><span class="ll">শুভ ধাতু</span><div class="lv">রূপা ও সোনা</div></div>
+        <div class="li"><span class="ll">ইষ্টদেব</span><div class="lv">মা দুর্গা 🪷</div></div>
+        <div class="li"><span class="ll">শুভ দিক</span><div class="lv">পশ্চিম ও দক্ষিণ</div></div>
+        <div class="li"><span class="ll">মন্ত্র</span><div class="lv">ওঁ বুধায় নমঃ</div></div>
+      </div>
+      <div class="hbox" style="margin-top:12px;"><p>📌 পান্না পাথর বুধবার সূর্যোদয়ের পর ডান হাতের কনিষ্ঠ আঙুলে সোনার আংটিতে ধারণ করুন। বুধ মহাদশার শুভ ফল বহুগুণ বৃদ্ধি পাবে।</p></div>
+    </div>
+  </div>
+
+  <!-- PREDICTIONS -->
+  <div id="pred">
+    <div class="stitle">আগামী ৩ বছরের ভবিষ্যদ্বাণী (২০২৫–২০২৮)</div>
+
+    <div class="rc">
+      <h3><span class="icon">🌟</span> ২০২৫ — বুধ / শনি অন্তর্দশা</h3>
+      <div class="yb">
+        <div class="yt"><span class="stars">★★★★☆</span> &nbsp;অত্যন্ত শুভ</div>
+        <div class="tags"><span class="tag">📚 শিক্ষা</span><span class="tag">🏆 পুরস্কার</span><span class="tag">👨‍👩‍👧 পারিবারিক সুখ</span><span class="tag">💪 স্বাস্থ্য ভালো</span></div>
+      </div>
+      <div class="hbox"><p>📚 <strong>শিক্ষা:</strong> দ্বাদশ শ্রেণির পরীক্ষা বা কলেজ ভর্তিতে অসাধারণ সাফল্য। বিজ্ঞান, গণিত বা বাণিজ্যে বিশেষ দক্ষতা প্রকাশ পাবে।</p></div>
+      <div class="hbox"><p>💰 <strong>অর্থ:</strong> বৃত্তি বা পুরস্কার পাওয়ার সম্ভাবনা। পারিবারিক আর্থিক স্থিতিশীলতা বজায় থাকবে।</p></div>
+      <div class="hbox"><p>❤️ <strong>সম্পর্ক:</strong> পারিবারিক পরিবেশ সুখের। বন্ধুত্বে নতুন সংযোজন। রোমান্টিক সম্পর্কে এখনই গভীরে না যাওয়াই ভালো।</p></div>
+      <div class="hbox"><p>⚠️ <strong>সতর্কতা:</strong> মার্চ–জুন পর্যন্ত শনির প্রভাবে কিছুটা মানসিক চাপ। মা বা অভিভাবকের স্বাস্থ্যে মনোযোগ রাখুন।</p></div>
+      <p><strong style="color:var(--gold);">উপায়:</strong> প্রতি বুধবার সবুজ বস্তু দান করুন। শনিবার তিলের তেল দান করুন। "ওঁ বুধায় নমঃ" ১০৮ বার জপ করুন।</p>
+    </div>
+
+    <div class="rc">
+      <h3><span class="icon">🚀</span> ২০২৬ — বুধ / বুধ অন্তর্দশা</h3>
+      <div class="yb">
+        <div class="yt"><span class="stars">★★★★★</span> &nbsp;অত্যন্ত শুভ ও উজ্জ্বল</div>
+        <div class="tags"><span class="tag">🎓 উচ্চশিক্ষা</span><span class="tag">🌍 ভ্রমণযোগ</span><span class="tag">💡 প্রতিভা বিকাশ</span><span class="tag">💵 নিজস্ব আয়</span></div>
+      </div>
+      <div class="hbox"><p>🎓 <strong>শিক্ষা:</strong> জীবন পরিবর্তনকারী বছর — "দ্বিগুণ বুধ" যোগ শিক্ষায় অসাধারণ সাফল্য দেয়।</p></div>
+      <div class="hbox"><p>🌍 <strong>ভ্রমণ:</strong> বিদেশে পড়াশোনার সুযোগ বা দূরভ্রমণের সম্ভাবনা প্রবল।</p></div>
+      <div class="hbox"><p>💡 <strong>প্রতিভা:</strong> লেখালেখি, বক্তৃতা, প্রযুক্তি বা উদ্যোগে সাফল্য। প্রতিযোগিতায় পুরস্কার লাভের যোগ।</p></div>
+      <div class="hbox"><p>💰 <strong>অর্থ:</strong> প্রথমবার নিজস্ব আয়ের পথ — পার্ট-টাইম, ফ্রিল্যান্সিং বা বৃত্তির মাধ্যমে।</p></div>
+      <div class="hbox"><p>⚠️ <strong>সতর্কতা:</strong> অতিরিক্ত আত্মবিশ্বাস এড়ান। সেপ্টেম্বর–অক্টোবরে রাহুর প্রভাবে বিভ্রান্তি আসতে পারে।</p></div>
+      <p><strong style="color:var(--gold);">উপায়:</strong> বুধবার সবুজ পোশাক পরুন। গণেশ পূজা করুন। "ওঁ গণ গণপতয়ে নমঃ" জপ করুন।</p>
+    </div>
+
+    <div class="rc">
+      <h3><span class="icon">🌈</span> ২০২৭–২০২৮ — বুধ/কেতু ও বুধ/শুক্র</h3>
+      <div class="yb">
+        <div class="yt"><span class="stars">★★★★☆</span> &nbsp;শুভ — আধ্যাত্মিক ও প্রেমময়</div>
+        <div class="tags"><span class="tag">🔮 আধ্যাত্মিকতা</span><span class="tag">💕 প্রেমজীবন</span><span class="tag">💼 পেশা শুরু</span><span class="tag">🏠 পারিবারিক শুভ</span></div>
+      </div>
+      <div class="hbox"><p>🔮 <strong>২০২৭ (কেতু অন্তর্দশা):</strong> অন্তর্মুখী ও আধ্যাত্মিক সময়। পুরনো কিছু ছেড়ে দেওয়ার প্রয়োজন — নতুনের জন্য প্রস্তুতি।</p></div>
+      <div class="hbox"><p>💕 <strong>২০২৮ (শুক্র অন্তর্দশা):</strong> রিয়ার জীবনের অন্যতম সুন্দর সময়। সৌন্দর্য, শিল্প, প্রেম ও পেশাদার সাফল্য একসাথে আসবে।</p></div>
+      <div class="hbox"><p>💼 <strong>ক্যারিয়ার:</strong> প্রথমবার পেশাদার কর্মজীবন শুরুর সম্ভাবনা। ফ্যাশন, মিডিয়া, আইন বা প্রযুক্তিতে পদার্পণ।</p></div>
+      <div class="hbox"><p>🏠 <strong>পারিবারিক:</strong> পরিবারে শুভ অনুষ্ঠান — বিবাহ বা নতুন সদস্যের আগমনের সম্ভাবনা।</p></div>
+      <div class="hbox"><p>⚠️ <strong>সতর্কতা:</strong> ৭ম ভাবের রাহুর কারণে প্রেম-সম্পর্কে তাড়াহুড়ো না করাই ভালো।</p></div>
+      <p><strong style="color:var(--gold);">উপায়:</strong> শুক্রবার সাদা ফুল দান করুন। লক্ষ্মী পূজা নিয়মিত করুন। "ওঁ শুক্রায় নমঃ" জপ করুন।</p>
+    </div>
+  </div>
+
+  <!-- REMEDIES -->
+  <div id="rem">
+    <div class="stitle">সাধারণ প্রতিকার ও পরামর্শ</div>
+    <div class="rc">
+      <h3><span class="icon">🙏</span> জ্যোতিষিক প্রতিকার</h3>
+      <div class="hbox"><p>☀️ প্রতিদিন সূর্যোদয়ে সূর্যকে জল অর্পণ করুন — <strong>"ওঁ সূর্যায় নমঃ"</strong> বলুন।</p></div>
+      <div class="hbox"><p>♄ শনিবার কালো তিল, সরষের তেল ও কালো কাপড় দান করুন। শনি মন্দিরে প্রদীপ দিন।</p></div>
+      <div class="hbox"><p>☊ রাহুর প্রভাব কমাতে মঙ্গল ও শনিবার দূর্বা ঘাস ও নীল ফুল গণেশকে নিবেদন করুন।</p></div>
+      <div class="hbox"><p>♃ প্রতি বৃহস্পতিবার হলুদ মিষ্টি বা কলা দান করুন — বৃহস্পতির শুভ ফল বৃদ্ধি পাবে।</p></div>
+      <div class="hbox"><p>🌸 <strong>"শ্রী সূক্তম"</strong> বা <strong>"মহালক্ষ্মী অষ্টকম"</strong> নিয়মিত পাঠ করলে শুক্রের শুভ ফল বহুগুণ বৃদ্ধি পাবে।</p></div>
+      <div class="hbox"><p>⭐ জ্যেষ্ঠা নক্ষত্রের অধিষ্ঠাত্রী ইন্দ্র। ইন্দ্র স্তুতি পাঠ করুন ও প্রকৃতির কাছাকাছি থাকুন।</p></div>
+    </div>
+  </div>
+
+  <div class="divider">✦ &nbsp; ॐ नमः शिवाय &nbsp; ✦</div>
+
+  <footer>
+    <p>এই কুণ্ডলী বিশ্লেষণ বৈদিক জ্যোতিষ শাস্ত্রের নিয়ম অনুযায়ী প্রণীত।</p>
+    <p>তমলুক, পশ্চিমবঙ্গ &nbsp;·&nbsp; অক্ষাংশ ২২.৩°N &nbsp;·&nbsp; দ্রাঘিমাংশ ৮৭.৯°E &nbsp;·&nbsp; লাহিড়ী অয়নাংশ</p>
+    <p style="opacity:.45;font-size:.68rem;margin-top:5px;">জ্যোতিষ পরামর্শ জীবনের সহায়ক — সিদ্ধান্তের একমাত্র ভিত্তি নয়।</p>
+  </footer>
+
+</div>
+</body>
+</html>
